@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class StrictlyIdentical // start of public class StrictlyIdentical 
+{
+    public static void main(String []args) // start of main function
+     {
+        Scanner input = new Scanner(System.in); // allows user input
+       
+        System.out.println("Enter 5 elements of list1: "); // display message on screen
+      
+     int[] list1 = new int[5]; // create new int array with size 5
+        for
+        {
+            list1[i]= input.nextInt(); // assign the user input into the array
+        }
+       
+        System.out.println("Enter 5 elements of list2: "); // print message on screen
+        int[] list2 = new int[5]; // create array of size 5
+        for(int i=0; i < 5; i++)
+        {
+            list2[i]= input.nextInt(); // assign the user input onto the array
+        }
+        if (equals(list1, list2)) // call the equals function using the inputted lists as parameters
+        {
+            System.out.println("The two strings are stictly identical"); // if equals is true display this
+        }
+        else
+        {
+            System.out.println("The two lists are not strictly identical"); // if equals is false display this
+        }
+     }
+     
+     public static boolean equals(int[] list1, int[]list2) // initalize equals method 
+   
+{
+          boolean equals = true; // initialize bool equals and set to true
+         for(int i= 0; i< list1.length; i++) // for loop to check each int on both arrays
+         {
+             if (list1[i] != list2[i]) // if one of the elements are different 
+             {
+                 return false; // return false to the bool method 
+             }
+             return true; // if all of them are the same return true
+     
+        }
+        return equals; // return whichever value the method gave to equals
+}
+
+}
