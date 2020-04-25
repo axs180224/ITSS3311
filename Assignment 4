@@ -9,7 +9,7 @@ public class StrictlyIdentical // start of public class StrictlyIdentical
         System.out.println("Enter 5 elements of list1: "); // display message on screen
       
      int[] list1 = new int[5]; // create new int array with size 5
-        for
+        for (int i= 0; i < 5; i++)
         {
             list1[i]= input.nextInt(); // assign the user input into the array
         }
